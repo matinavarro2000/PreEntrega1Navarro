@@ -1,4 +1,4 @@
-alert("Esta es una calculadora para saber si te conviene en efectivo o en 12 cuotas")
+alert("Esta es una calculadora para saber si te conviene pagar en efectivo o en 12 cuotas")
 
 function valorPresente(precioCuotas) {
     return precioCuotas / (1 + 0.1) ** 12
