@@ -4,9 +4,9 @@ function valorPresente(precioCuotas) {
     return precioCuotas / (1 + 0.1) ** 12
 }
 
-let continuar = true
+let continuar = 1
 
-while (continuar) {
+while (continuar == 1) {
     const precioEfectivo = parseInt(prompt("Ingresa el precio en efectivo del producto"))
     const precioCuotas = parseInt(prompt("Ingresa el precio en cuotas"))
 
@@ -20,7 +20,8 @@ while (continuar) {
         alert("Da lo mismo pagar en efectivo o en cuotas")
     }
 
-    continuar = confirm("¿Queres realizar otra comparación?")
+    continuar = parseInt(prompt("Ingrese 1 para continuar, otro caracter para salir"))
+    
 }
 
 alert("Gracias por usar la calculadora")
